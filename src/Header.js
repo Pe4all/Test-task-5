@@ -1,6 +1,7 @@
 import "./App.scss";
 import React from "react";
-import { ReactComponent as Logo } from "./theme.svg";
+import { ReactComponent as Theme } from "./theme.svg";
+import { ReactComponent as Logo } from "./logo.svg";
 
 const Header = () => {
   const handleTheme = () => {
@@ -14,9 +15,9 @@ const Header = () => {
   return (
     <header>
       <div className="container__header">
-        <img src="../logo.svg" className="logo" alt="logo" />
+        <Logo alt="logo" />
         <button onClick={handleTheme} className="switch-theme">
-          <Logo alt="theme" />
+          <Theme alt="theme" />
         </button>
       </div>
     </header>
